@@ -1,17 +1,60 @@
 # Satellite Image Object Detection with Mask R-CNN
 
 ## Chase Toyofuku-Souza
-> toyofukusouza@chapman.edu
-> CPSC 393
 
-Files Submitted
-> final.ipynb
-> CPSC_393_Final_Presentation.pdf
+## Table of Contents
 
-Notes
+* [About](#about)
+* [Required Dependencies](#Required-Dependencies)
+* [Files](#Files)
+* [Notes](#Notes)
+* [References](#References)
+
+## About
+Final project for CPSC 393 (Machine Learning) at Chapman University. This is an example of using Matterports Mask R-CNN framework to detect and create masks around cars and swimming pools from satellite images. There are an abundance of satellite imagery data available and manually sorting through all of it would be tedious, this project was a proof of concept that it is possible to accurately detect objects via satellite images. Other important applications include surveying areas via drones and detecting things such as stolen cars or fires.
+
+## Required-Dependencies
+* matplotlib
+```sh
+pip install matplotlib
+```
+* numpy
+```sh
+pip install numpy
+```
+* cv2
+```sh
+pip install opencv-python
+```
+* xml-python
+```sh
+pip install xml-python
+```
+
+* mask-rcnn
+```sh
+git clone https://github.com/matterport/Mask_RCNN.git
+```
+
+* tensorflow-gpu
+```sh
+conda create -n tf-gpu tensorflow-gpu
+conda activate tf-gpu
+```
+
+* keras
+```sh
+conda install -c conda-forge keras
+```
+
+### Files
+- [`Notebook`](final.ipynb)
+- [`Presentation`](CPSC_393_Final_Presentation.pdf)
+
+### Notes
 - This project was heavily based on the `train_shapes.ipynb` found at https://github.com/matterport/Mask_RCNN/blob/master/samples/shapes/train_shapes.ipynb, as well as the article https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras/, as noted in the references.
 
-References:
+### References:
 - https://machinelearningmastery.com/how-to-train-an-object-detection-model-with-keras/
 - https://medium.com/analytics-vidhya/confusion-matrix-accuracy-precision-recall-f1-score-ade299cf63cd
 - https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e
